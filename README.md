@@ -1,1 +1,2 @@
 # Multilingual-Agricultural-Query-Classification-System
+A multilingual AI system that classifies agricultural queries submitted in English, Hindi, or Gujarati into relevant categories using NLP and machine learning.
