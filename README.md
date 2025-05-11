@@ -3,4 +3,4 @@ A multilingual AI system that classifies agricultural queries submitted in Engli
 
 This project is explained in the following video:
 
-[Watch the explanation video](https://your-video-link.com)
+[Watch the explanation video](https://youtu.be/AcB2v6xQy5M)
