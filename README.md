@@ -47,6 +47,32 @@ python app/app.py
 http://127.0.0.1:5000/
 ```
 
+## Dataset
+
+-~50,000 agricultural queries collected from forums, helplines, and community platforms.
+
+-Categories include:
+
+--Cultural Practices
+
+--Fertilizer Use
+
+--Weather
+
+--Market Information
+
+--Government Schemes
+
+--Weed Management
+
+--Plant Protection
+
+--Nutrient Management
+
+--Varieties
+
+--Field Preparation
+
 
 
 
