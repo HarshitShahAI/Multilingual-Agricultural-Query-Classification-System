@@ -13,15 +13,17 @@ A multilingual AI system that classifies agricultural queries submitted in Engli
 
 ## Project Structure
 
-├── data/                # Dataset (agricultural queries)
-├── notebooks/           # Jupyter Notebooks for training & experiments
-├── models/              # Saved ML models
-├── app/                 
-│   ├── app.py           # Flask web app
-│   ├── static/          # CSS/JS files
-│   └── templates/       # HTML templates
-├── requirements.txt     # Dependencies
-└── README.md  
+Each folder serves a specific purpose:
+- **data/** → Contains agricultural queries dataset.  
+- **notebooks/** → Jupyter notebooks used for experimentation, preprocessing, and model training.  
+- **models/** → Trained machine learning models saved for deployment.  
+- **app/** → Flask web application for serving predictions.  
+  - **app.py** → Entry point to start the Flask server.  
+  - **static/** → Frontend static assets (CSS/JavaScript).  
+  - **templates/** → HTML pages for rendering the web interface.  
+- **requirements.txt** → List of Python dependencies required to run the project.  
+- **README.md** → Documentation for the project.  
+
 
 ---
 
@@ -46,36 +48,76 @@ python app/app.py
 # 5. Open in your browser:
 http://127.0.0.1:5000/
 ```
-
+---
 ## Dataset
 
--~50,000 agricultural queries collected from forums, helplines, and community platforms.
+- ~50,000 agricultural queries collected from forums, helplines, and community platforms.  
 
--Categories include:
+- Categories include:  
+  - Cultural Practices  
+  - Fertilizer Use  
+  - Weather  
+  - Market Information  
+  - Government Schemes  
+  - Weed Management  
+  - Plant Protection  
+  - Nutrient Management  
+  - Varieties  
+  - Field Preparation
 
---Cultural Practices
+  ---
 
---Fertilizer Use
+## Methodology
 
---Weather
+### Preprocessing
+- Stopword removal (language-specific)  
+- Tokenization  
+- Stemming/Normalization  
+- Unicode filtering for Hindi/Gujarati  
 
---Market Information
+### Feature Extraction
+- TF-IDF (word & character n-grams)  
 
---Government Schemes
+### Model Training
+- Trained individual models: Naive Bayes (NB), Support Vector Machine (SVM), Random Forest (RF), Logistic Regression (LR), Stochastic Gradient Descent (SGD), XGBoost (XGB)  
+- Constructed voting ensembles (hard + soft voting)  
 
---Weed Management
+### Evaluation Metric
+- Micro F1-score (handles class imbalance effectively)
 
---Plant Protection
+---
 
---Nutrient Management
+## Results
 
---Varieties
+| Language      | Best Ensemble              | Micro F1-score |
+|---------------|---------------------------|----------------|
+| English       | LR + RF + NB               | 0.71           |
+| Hindi         | LR + RF + NB + SGD + XGB   | 0.68           |
+| Gujarati      | LR + RF + NB + SGD + XGB   | 0.68           |
+| Multilingual  | LR + RF + NB + SGD + XGB   | 0.42           |
 
---Field Preparation
 
+---
 
+## Demo
+- Project Explanation Video  
+- GitHub Repository  
 
+## Tech Stack
+- **Languages:** Python  
+- **Libraries:** scikit-learn, NLTK, Pandas, NumPy, XGBoost  
+- **Framework:** Flask  
+- **Frontend:** HTML, CSS  
 
-This project is explained in the following video:
+## Contributors
+- Harshit Shah  
+- Yash Joshi  
+- Diwyanshu  
+- Pawan  
+- Ashish  
 
-[Watch the explanation video](https://youtu.be/AcB2v6xQy5M)
+## Future Work
+- Integrate transformer-based models (BERT, Indic-BERT, XLM-R)  
+- Add speech-to-text query input  
+- Expand to more Indian languages  
+- Optimize performance for deployment at scale 
