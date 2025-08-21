@@ -27,7 +27,9 @@ A multilingual AI system that classifies agricultural queries submitted in Engli
 
 ## Installation & Setup
 ### 1. Clone the repo
-```git clone https://github.com/HarshitShahAI/Multilingual-Agricultural-Query-Classification-System.git cd Multilingual-Agricultural-Query-Classification-System```
+```bash
+git clone https://github.com/HarshitShahAI/Multilingual-Agricultural-Query-Classification-System.git
+cd Multilingual-Agricultural-Query-Classification-System
 
 ### 2. Create a virtual environment
 python -m venv venv
