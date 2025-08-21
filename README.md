@@ -23,7 +23,7 @@ flowchart TD
     D --> E["Voting Mechanism (Hard/Soft)"]
     E --> F["Predicted Category"]
     F --> G["Flask Web Interface"]
-
+```
 ---
 
 ## Project Structure
