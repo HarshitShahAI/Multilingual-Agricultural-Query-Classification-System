@@ -11,15 +11,7 @@ A multilingual AI system that classifies agricultural queries submitted in Engli
 
   ---
 
-## System Architecture
-```mermaid
-flowchart TD
-    A["User Query (English / Hindi / Gujarati)"] --> B["Language Detection & Preprocessing"]
-    B --> C["TF-IDF Vectorization"]
-    C --> D["Ensemble Classifiers (SVM, RF, XGBoost, etc.)"]
-    D --> E["Voting Mechanism (Hard/Soft)"]
-    E --> F["Predicted Category"]
-    F --> G["Flask Web Interface"]
+## Project Structure
 
 ├── data/                # Dataset (agricultural queries)
 ├── notebooks/           # Jupyter Notebooks for training & experiments
@@ -30,6 +22,30 @@ flowchart TD
 │   └── templates/       # HTML templates
 ├── requirements.txt     # Dependencies
 └── README.md  
+
+---
+
+## Installation & Setup
+### 1. Clone the repo
+git clone https://github.com/HarshitShahAI/Multilingual-Agricultural-Query-Classification-System.git
+cd Multilingual-Agricultural-Query-Classification-System
+
+### 2. Create a virtual environment
+python -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+
+### 3. Install dependencies
+pip install -r requirements.txt
+
+### 4. Run the Flask app
+python app/app.py
+
+### 5. Open in your browser:
+http://127.0.0.1:5000/
+
+
+
 
 
 This project is explained in the following video:
