@@ -26,25 +26,26 @@ A multilingual AI system that classifies agricultural queries submitted in Engli
 ---
 
 ## Installation & Setup
-### 1. Clone the repo
+
 ```bash
+# 1. Clone the repo
 git clone https://github.com/HarshitShahAI/Multilingual-Agricultural-Query-Classification-System.git
 cd Multilingual-Agricultural-Query-Classification-System
 
-### 2. Create a virtual environment
+# 2. Create a virtual environment
 python -m venv venv
 source venv/bin/activate   # On Mac/Linux
 venv\Scripts\activate      # On Windows
 
-### 3. Install dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
 
-### 4. Run the Flask app
+# 4. Run the Flask app
 python app/app.py
 
-### 5. Open in your browser:
+# 5. Open in your browser:
 http://127.0.0.1:5000/
-
+```
 
 
 
