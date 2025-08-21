@@ -11,6 +11,21 @@ A multilingual AI system that classifies agricultural queries submitted in Engli
 
   ---
 
+---
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    A["User Query (English / Hindi / Gujarati)"] --> B["Language Detection & Preprocessing"]
+    B --> C["TF-IDF Vectorization"]
+    C --> D["Ensemble Classifiers (SVM, RF, XGBoost, etc.)"]
+    D --> E["Voting Mechanism (Hard/Soft)"]
+    E --> F["Predicted Category"]
+    F --> G["Flask Web Interface"]
+
+---
+
 ## Project Structure
 
 Each folder serves a specific purpose:
